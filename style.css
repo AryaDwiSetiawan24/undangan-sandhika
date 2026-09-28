@@ -1,20 +1,44 @@
 /* simplyCountdown custom overrides to match original responsiveness */
+
+/* Base font for label word */
+.simply-countdown > .simply-section .simply-word {
+  font-size: 0.7rem;
+}
+
 @media (max-width: 992px) {
   .simply-countdown > .simply-section {
     padding: 50px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 1.4rem;
+  }
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 0.65rem;
   }
 }
 
 @media (max-width: 768px) {
   .simply-countdown > .simply-section {
-    padding: 35px;
+    padding: 49px;
     margin: 5px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 1.3rem;
+  }
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 0.6rem;
   }
 }
 
 @media (max-width: 576px) {
   .simply-countdown > .simply-section {
-    padding: 25px;
-    margin: 3px;
+    padding: 35px;
+    margin: 4px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 1.05rem;
+  }
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 0.52rem;
   }
 }

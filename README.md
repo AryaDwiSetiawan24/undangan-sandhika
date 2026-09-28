@@ -23,10 +23,11 @@ Semua perubahan data dapat dilakukan langsung di dalam file `index.html`. Beriku
 
 ### 1. Nama Tamu Undangan (Penerima)
 
-Nama tamu tidak ditulis langsung (hardcode) di HTML, melainkan menggunakan **URL Parameter**.
+Nama tamu tidak ditulis langsung (hardcode) di HTML, melainkan menggunakan **URL Parameter** dan mengambil data dari **Google Apps Script API**.
 
-- Contoh URL: `index.html?n=Budi&p=Bapak`
-- Script di bagian paling bawah otomatis mengambil parameter `n` (Nama) dan `p` (Sapaan/Pronoun) untuk ditampilkan di bagian Hero.
+- Contoh URL: `index.html?to=tamu_id_tertentu`
+- Script di bagian paling bawah otomatis mengambil parameter `to` (ID Tamu), melakukan *request* ke API untuk mendapatkan data yang bersangkutan, lalu menampilkan Nama dan Sapaan di bagian Hero.
+- Jika ID tamu kosong atau gagal dimuat, akan otomatis menampilkan teks default "Bapak/Ibu/Saudara/i,".
 
 ### 2. Data Mempelai (`<section id="home">`)
 
