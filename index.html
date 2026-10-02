@@ -376,7 +376,7 @@
 
         <form
           method="POST"
-          action="#"
+          action="https://script.google.com/macros/s/AKfycbwyGEzYnTN8bQldzfpmigibYbpwSw6zKN0lZerTsYz4sBjMdKSRNXKKPlL94hUoHoQs/exec"
           id="my-form"
           class="flex flex-col md:flex-row items-end justify-center gap-6 max-w-4xl mx-auto"
         >
@@ -417,7 +417,7 @@
           </div>
           
           <div class="w-full md:w-auto mt-4 md:mt-0">
-            <button class="w-full md:w-auto px-8 py-3 bg-pink text-white border border-pink rounded hover:bg-white hover:text-pink transition font-semibold text-lg">Kirim</button>
+            <button type="submit" class="w-full md:w-auto px-8 py-3 bg-pink text-white border border-pink rounded hover:bg-white hover:text-pink transition font-semibold text-lg">Kirim</button>
           </div>
         </form>
       </div>
@@ -648,20 +648,40 @@
       disableScroll();
     </script>
     <script>
-      window.addEventListener("load", function () {
-        const form = document.getElementById("my-form");
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          const data = new FormData(form);
-          const action = e.target.action;
-          fetch(action, {
+      window.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("my-form");
+      const submitButton = form.querySelector('button[type="submit"]');
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        submitButton.disabled = true;
+        submitButton.textContent = "Mengirim...";
+
+        const data = new FormData(form);
+
+        try {
+          await fetch(form.action, {
             method: "POST",
             body: data,
-          }).then(() => {
-            alert("Konfirmasi kehadiran berhasil terkirim!");
+            mode: "no-cors",
           });
-        });
+
+          alert("Konfirmasi kehadiran berhasil dikirim!");
+
+          // Reset hanya field yang perlu direset
+          document.getElementById("jumlah").value = "1";
+          document.getElementById("status").value = "";
+
+        } catch (error) {
+          console.error("Gagal mengirim RSVP:", error);
+          alert("Gagal mengirim konfirmasi. Silakan coba lagi.");
+        } finally {
+          submitButton.disabled = false;
+          submitButton.textContent = "Kirim";
+        }
       });
+    });
     </script>
 
     <script>
