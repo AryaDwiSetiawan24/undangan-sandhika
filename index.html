@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dhika & Nofa Wedding</title>
-    
+
     <!-- Tailwind CSS (Play CDN for static HTML) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -12,18 +12,19 @@
         theme: {
           extend: {
             colors: {
-              pink: '#f14e95',
-              bg: '#0a0a0a'
+              pink: "#f14e95",
+              bg: "#0a0a0a",
             },
             fontFamily: {
-              sacramento: ['Sacramento', 'cursive'],
-              work: ['Work Sans', 'sans-serif']
-            }
-          }
-        }
-      }
+              sacramento: ["Sacramento", "cursive"],
+              work: ["Work Sans", "sans-serif"],
+            },
+          },
+        },
+      };
     </script>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,65 +46,144 @@
   </head>
 
   <body class="font-work text-gray-800 text-lg md:text-xl overflow-x-hidden">
-    <!-- HERO SECTION -->
+    <!-- ==================== HERO SECTION ==================== -->
     <section
       id="hero"
       class="hero relative w-full min-h-screen flex justify-center items-center text-center text-white px-4 z-0"
     >
-      <div class="absolute inset-0 bg-[url('img/bg-prewed.jpg')] bg-cover bg-center grayscale -z-10"></div>
-      <main class="max-w-4xl mx-auto w-full [text-shadow:0_2px_2px_rgba(0,0,0,0.5)]">
-        <h4 class="text-lg md:text-2xl lg:text-3xl mb-2 md:mb-4 mt-8 md:mt-0">Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
-        <h1 class="font-sacramento text-pink text-[3.5rem] sm:text-5xl md:text-7xl lg:text-[6rem] mb-2 md:mb-4 leading-tight">Sandhika & Nofariza</h1>
-        <p class="text-sm md:text-lg lg:text-xl mb-4 md:mb-6">Akan melangsungkan resepsi pernikahan dalam:</p>
+      <div
+        class="absolute inset-0 bg-[url('img/bg-prewed.jpg')] bg-cover bg-center grayscale -z-10"
+      ></div>
+      <main
+        class="max-w-4xl mx-auto w-full [text-shadow:0_2px_2px_rgba(0,0,0,0.5)]"
+      >
+        <h4 class="text-lg md:text-2xl lg:text-3xl mb-2 md:mb-4 mt-8 md:mt-0">
+          Kepada <span>Bapak/Ibu/Saudara/i, </span>
+        </h4>
+        <h1
+          class="font-sacramento text-pink text-[3.5rem] sm:text-5xl md:text-7xl lg:text-[6rem] mb-2 md:mb-4 leading-tight"
+        >
+          Sandhika & Nofariza
+        </h1>
+        <p class="text-sm md:text-lg lg:text-xl mb-4 md:mb-6">
+          Akan melangsungkan resepsi pernikahan dalam:
+        </p>
         <div class="simply-countdown mb-6 md:mb-8"></div>
-        <a href="#home" class="inline-block px-6 py-2.5 md:px-8 md:py-3 rounded text-pink bg-white hover:bg-pink hover:text-white transition font-semibold text-sm md:text-lg mt-2 mb-8 md:mb-0 [text-shadow:none]" onClick="enableScroll()"
+        <a
+          href="#home"
+          class="inline-block px-6 py-2.5 md:px-8 md:py-3 rounded text-pink bg-white hover:bg-pink hover:text-white transition font-semibold text-sm md:text-lg mt-2 mb-8 md:mb-0 [text-shadow:none]"
+          onClick="enableScroll()"
           >Lihat Undangan</a
         >
       </main>
     </section>
 
-    <!-- NAVBAR -->
-    <nav class="sticky top-0 z-50 bg-white/30 backdrop-blur-md w-full transition-all duration-300">
+    <!-- ==================== NAVBAR ==================== -->
+    <nav
+      class="sticky top-0 z-50 bg-white/30 backdrop-blur-md w-full transition-all duration-300"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
-          <a class="font-sacramento text-5xl font-bold text-gray-900 drop-shadow-sm" href="#">Dino</a>
-          
-          <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-900 focus:outline-none" aria-label="Toggle navigation">
+          <a
+            class="font-sacramento text-5xl font-bold text-gray-900 drop-shadow-sm"
+            href="#"
+            >Dino</a
+          >
+
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden p-2 text-gray-900 focus:outline-none"
+            aria-label="Toggle navigation"
+          >
             <i class="bi bi-list text-4xl"></i>
           </button>
-          
+
           <!-- Desktop Menu -->
-          <div class="hidden md:flex space-x-6 lg:space-x-8 items-center uppercase text-sm lg:text-base tracking-widest font-semibold">
-            <a class="hover:text-pink transition text-gray-900" href="#home">Home</a>
-            <a class="hover:text-pink transition text-gray-900" href="#info">Info</a>
-            <a class="hover:text-pink transition text-gray-900" href="#story">Story</a>
-            <a class="hover:text-pink transition text-gray-900" href="#gallery">Gallery</a>
-            <a class="hover:text-pink transition text-gray-900" href="#rsvp">RSVP</a>
-            <a class="hover:text-pink transition text-gray-900" href="#gifts">Gifts</a>
+          <div
+            class="hidden md:flex space-x-6 lg:space-x-8 items-center uppercase text-sm lg:text-base tracking-widest font-semibold"
+          >
+            <a class="hover:text-pink transition text-gray-900" href="#home"
+              >Home</a
+            >
+            <a class="hover:text-pink transition text-gray-900" href="#info"
+              >Info</a
+            >
+            <a class="hover:text-pink transition text-gray-900" href="#story"
+              >Story</a
+            >
+            <a class="hover:text-pink transition text-gray-900" href="#gallery"
+              >Gallery</a
+            >
+            <a class="hover:text-pink transition text-gray-900" href="#rsvp"
+              >RSVP</a
+            >
+            <a class="hover:text-pink transition text-gray-900" href="#gifts"
+              >Gifts</a
+            >
           </div>
+        </div>
       </div>
     </nav>
 
     <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu-overlay" class="hidden md:hidden fixed inset-0 bg-black/40 z-30 transition-opacity duration-300"></div>
+    <div
+      id="mobile-menu-overlay"
+      class="hidden md:hidden fixed inset-0 bg-black/40 z-30 transition-opacity duration-300"
+    ></div>
 
     <!-- Mobile Menu (Drawer) - Moved outside nav to fix backdrop-blur -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white/30 backdrop-blur-md fixed top-20 left-0 w-full shadow-lg border-t border-white/20 z-40">
-      <div class="px-4 py-4 space-y-2 flex flex-col items-center uppercase font-semibold text-gray-900 tracking-wider">
-          <a class="block w-full text-center py-3 hover:bg-white/40 hover:text-pink mobile-nav-link transition rounded" href="#home">Home</a>
-          <a class="block w-full text-center py-3 hover:bg-white/40 hover:text-pink mobile-nav-link transition rounded" href="#info">Info</a>
-          <a class="block w-full text-center py-3 hover:bg-white/40 hover:text-pink mobile-nav-link transition rounded" href="#story">Story</a>
-          <a class="block w-full text-center py-3 hover:bg-white/40 hover:text-pink mobile-nav-link transition rounded" href="#gallery">Gallery</a>
-          <a class="block w-full text-center py-3 hover:bg-white/40 hover:text-pink mobile-nav-link transition rounded" href="#rsvp">RSVP</a>
-          <a class="block w-full text-center py-3 hover:bg-white/40 hover:text-pink mobile-nav-link transition rounded" href="#gifts">Gifts</a>
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden bg-white/30 backdrop-blur-md fixed top-20 left-0 w-full shadow-lg border-t border-white/20 z-40"
+    >
+      <div
+        class="px-4 py-4 space-y-2 flex flex-col items-center uppercase font-semibold text-gray-900 tracking-wider"
+      >
+        <a
+          class="block w-full text-center py-3 hover:bg-white/40 hover:text-pink mobile-nav-link transition rounded"
+          href="#home"
+          >Home</a
+        >
+        <a
+          class="block w-full text-center py-3 hover:bg-white/40 hover:text-pink mobile-nav-link transition rounded"
+          href="#info"
+          >Info</a
+        >
+        <a
+          class="block w-full text-center py-3 hover:bg-white/40 hover:text-pink mobile-nav-link transition rounded"
+          href="#story"
+          >Story</a
+        >
+        <a
+          class="block w-full text-center py-3 hover:bg-white/40 hover:text-pink mobile-nav-link transition rounded"
+          href="#gallery"
+          >Gallery</a
+        >
+        <a
+          class="block w-full text-center py-3 hover:bg-white/40 hover:text-pink mobile-nav-link transition rounded"
+          href="#rsvp"
+          >RSVP</a
+        >
+        <a
+          class="block w-full text-center py-3 hover:bg-white/40 hover:text-pink mobile-nav-link transition rounded"
+          href="#gifts"
+          >Gifts</a
+        >
       </div>
     </div>
 
-    <!-- HOME / COUPLE SECTION -->
-    <section id="home" class="bg-[url('img/bg.png')] bg-cover min-h-screen pt-40 pb-20 -mt-24">
+    <!-- ==================== HOME / COUPLE SECTION ==================== -->
+    <section
+      id="home"
+      class="bg-[url('img/bg.png')] bg-cover min-h-screen pt-40 pb-20 -mt-24"
+    >
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-24 max-w-3xl mx-auto">
-          <h2 class="text-pink font-sacramento text-6xl md:text-7xl lg:text-8xl font-bold mb-6">Acara Pernikahan</h2>
+          <h2
+            class="text-pink font-sacramento text-6xl md:text-7xl lg:text-8xl font-bold mb-6"
+          >
+            Acara Pernikahan
+          </h2>
           <h3 class="text-gray-800 text-2xl md:text-3xl mb-4 font-semibold">
             Diselenggarakan pada 20 November 2023 di Bandung, Jawa Barat.
           </h3>
@@ -114,12 +194,22 @@
           </p>
         </div>
 
-        <div class="relative flex flex-col md:flex-row justify-center items-center gap-16 md:gap-0 mt-16">
+        <div
+          class="relative flex flex-col md:flex-row justify-center items-center gap-16 md:gap-0 mt-16"
+        >
           <!-- Sandhika -->
-          <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end">
-            <div class="flex flex-row items-center text-right mr-0 md:mr-10 w-full md:w-auto">
+          <div
+            class="w-full md:w-1/2 flex items-center justify-center md:justify-end"
+          >
+            <div
+              class="flex flex-row items-center text-right mr-0 md:mr-10 w-full md:w-auto"
+            >
               <div class="flex-1 pr-6">
-                <h3 class="font-sacramento text-5xl md:text-6xl text-pink mb-3 font-bold">Sandhika Galih</h3>
+                <h3
+                  class="font-sacramento text-5xl md:text-6xl text-pink mb-3 font-bold"
+                >
+                  Sandhika Galih
+                </h3>
                 <p class="text-gray-600 mb-3 font-light text-base md:text-lg">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
                   praesentium aut ipsa perferendis, incidunt soluta?
@@ -141,13 +231,19 @@
           </div>
 
           <!-- Heart Icon -->
-          <span class="hidden xl:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full shadow-lg items-center justify-center z-10">
+          <span
+            class="hidden xl:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full shadow-lg items-center justify-center z-10"
+          >
             <i class="bi bi-heart-fill text-pink text-xl"></i>
           </span>
 
           <!-- Nofa -->
-          <div class="w-full md:w-1/2 flex items-center justify-center md:justify-start mt-8 md:mt-0">
-            <div class="flex flex-row items-center text-left ml-0 md:ml-10 w-full md:w-auto">
+          <div
+            class="w-full md:w-1/2 flex items-center justify-center md:justify-start mt-8 md:mt-0"
+          >
+            <div
+              class="flex flex-row items-center text-left ml-0 md:ml-10 w-full md:w-auto"
+            >
               <div class="w-1/3 md:w-48 shrink-0">
                 <img
                   src="img/nofa.png"
@@ -156,7 +252,11 @@
                 />
               </div>
               <div class="flex-1 pl-6">
-                <h3 class="font-sacramento text-5xl md:text-6xl text-pink mb-3 font-bold">Nofariza</h3>
+                <h3
+                  class="font-sacramento text-5xl md:text-6xl text-pink mb-3 font-bold"
+                >
+                  Nofariza
+                </h3>
                 <p class="text-gray-600 mb-3 font-light text-base md:text-lg">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
                   praesentium aut ipsa perferendis, incidunt soluta?
@@ -173,17 +273,23 @@
       </div>
     </section>
 
-    <!-- INFO SECTION -->
+    <!-- ==================== INFO SECTION ==================== -->
     <section id="info" class="bg-bg text-white pt-40 pb-32">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-12">
-          <h2 class="text-pink font-sacramento text-6xl md:text-7xl lg:text-8xl font-bold mb-6">Informasi Acara</h2>
+          <h2
+            class="text-pink font-sacramento text-6xl md:text-7xl lg:text-8xl font-bold mb-6"
+          >
+            Informasi Acara
+          </h2>
           <p class="text-lg md:text-xl mb-6 font-light">
             Alamat: Gedung Kologdam, Kodiklat TNI AD. <br />
             Jl. Aceh, Merdeka, Kec. Sumur Bandung, Kota Bandung
           </p>
 
-          <div class="w-full h-[250px] md:h-[400px] mb-6 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+          <div
+            class="w-full h-[250px] md:h-[400px] mb-6 rounded-lg overflow-hidden shadow-lg border border-gray-700"
+          >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.964576668065!2d110.6360630749111!3d-6.894840622505624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70ebe97924f94d%3A0x1724549a1b1e8797!2sMasjid%20Agung%20Demak!5e0!3m2!1sid!2sid!4v1790928739124!5m2!1sid!2sid"
               width="100%"
@@ -201,17 +307,24 @@
             class="inline-block px-5 py-2.5 bg-gray-200 text-gray-900 text-sm md:text-base rounded hover:bg-white transition mb-6 font-semibold"
             >Klik untuk membuka peta</a
           >
+
           <p class="text-base font-light text-gray-300">
             Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di
-            tujuan namun tidak ada tanda-tanda sedang dilangsungkan
-            pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.
+            tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan,
+            boleh jadi Anda salah jadwal, atau salah tempat.
           </p>
         </div>
 
         <div class="flex flex-col md:flex-row justify-center gap-8 mt-16">
           <!-- Card Akad Nikah -->
-          <div class="w-full md:w-[45%] bg-white/10 border border-gray-500 rounded-lg flex flex-col text-center shadow-lg">
-            <div class="border-b border-gray-500 py-4 uppercase tracking-widest font-semibold text-lg">Akad Nikah</div>
+          <div
+            class="w-full md:w-[45%] bg-white/10 border border-gray-500 rounded-lg flex flex-col text-center shadow-lg"
+          >
+            <div
+              class="border-b border-gray-500 py-4 uppercase tracking-widest font-semibold text-lg"
+            >
+              Akad Nikah
+            </div>
             <div class="p-8 flex flex-col sm:flex-row justify-center gap-8">
               <div class="flex flex-col items-center flex-1">
                 <i class="bi bi-clock text-4xl mb-3 text-pink"></i>
@@ -222,15 +335,23 @@
                 <span class="text-lg">Minggu, 20 November 2023</span>
               </div>
             </div>
-            <div class="border-t border-gray-500 py-4 px-6 text-sm md:text-base font-light text-gray-300 bg-white/5 rounded-b-lg">
-              Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
-              dan kekhusyuan seluruh prosesi.
+            <div
+              class="border-t border-gray-500 py-4 px-6 text-sm md:text-base font-light text-gray-300 bg-white/5 rounded-b-lg"
+            >
+              Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan
+              kekhusyuan seluruh prosesi.
             </div>
           </div>
-          
+
           <!-- Card Resepsi -->
-          <div class="w-full md:w-[45%] bg-white/10 border border-gray-500 rounded-lg flex flex-col text-center shadow-lg">
-            <div class="border-b border-gray-500 py-4 uppercase tracking-widest font-semibold text-lg">Resepsi</div>
+          <div
+            class="w-full md:w-[45%] bg-white/10 border border-gray-500 rounded-lg flex flex-col text-center shadow-lg"
+          >
+            <div
+              class="border-b border-gray-500 py-4 uppercase tracking-widest font-semibold text-lg"
+            >
+              Resepsi
+            </div>
             <div class="p-8 flex flex-col sm:flex-row justify-center gap-8">
               <div class="flex flex-col items-center flex-1">
                 <i class="bi bi-clock text-4xl mb-3 text-pink"></i>
@@ -241,21 +362,34 @@
                 <span class="text-lg">Minggu, 20 November 2023</span>
               </div>
             </div>
-            <div class="border-t border-gray-500 py-4 px-6 text-sm md:text-base font-light text-gray-300 bg-white/5 rounded-b-lg">
-              Saat acara resepsi diharapkan untuk tetap mematuhi protokol kesehatan dan mengikuti arahan panitia.
+            <div
+              class="border-t border-gray-500 py-4 px-6 text-sm md:text-base font-light text-gray-300 bg-white/5 rounded-b-lg"
+            >
+              Saat acara resepsi diharapkan untuk tetap mematuhi protokol
+              kesehatan dan mengikuti arahan panitia.
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- STORY SECTION -->
+    <!-- ==================== STORY SECTION ==================== -->
     <section id="story" class="pt-40 pb-32 bg-white">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-20">
-          <span class="uppercase text-gray-500 text-sm md:text-base tracking-[0.2em] block mb-3 font-semibold">Bagaimana Cinta Kami Bersemi</span>
-          <h2 class="text-pink font-sacramento text-6xl md:text-7xl lg:text-8xl font-bold mb-6">Cerita Kami</h2>
-          <p class="text-gray-600 text-lg md:text-xl font-light max-w-2xl mx-auto">
+          <span
+            class="uppercase text-gray-500 text-sm md:text-base tracking-[0.2em] block mb-3 font-semibold"
+          >
+            Bagaimana Cinta Kami Bersemi
+          </span>
+          <h2
+            class="text-pink font-sacramento text-6xl md:text-7xl lg:text-8xl font-bold mb-6"
+          >
+            Cerita Kami
+          </h2>
+          <p
+            class="text-gray-600 text-lg md:text-xl font-light max-w-2xl mx-auto"
+          >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
             similique non soluta nulla asperiores voluptatem.
           </p>
@@ -263,21 +397,37 @@
 
         <div class="relative max-w-4xl mx-auto">
           <!-- Center Line -->
-          <div class="absolute left-[40px] md:left-1/2 top-0 bottom-0 w-[1px] bg-gray-300 -translate-x-1/2"></div>
+          <div
+            class="absolute left-[40px] md:left-1/2 top-0 bottom-0 w-[1px] bg-gray-300 -translate-x-1/2"
+          ></div>
 
           <div class="flex flex-col gap-16 md:gap-24">
-            
             <!-- Event 1 (Left Desktop) -->
-            <div class="relative flex flex-col md:flex-row items-center justify-between w-full group">
-              <div class="absolute left-[40px] md:left-1/2 top-0 md:top-1/2 w-20 h-20 md:w-40 md:h-40 bg-gray-300 rounded-full border-4 border-white shadow-lg bg-cover bg-center -translate-x-1/2 md:-translate-y-1/2 z-10 transition-transform duration-300 group-hover:scale-110" style="background-image: url(img/sman23.jpg)"></div>
-              
-              <div class="w-full pl-[100px] md:pl-0 md:w-[45%] md:pr-16 md:text-right self-start md:self-center mt-2 md:mt-0">
-                <div class="bg-gray-50 border border-gray-200 p-6 md:p-8 rounded-xl shadow-md relative hover:shadow-lg transition">
-                  <div class="hidden md:block absolute top-1/2 -right-3.5 w-7 h-7 bg-gray-50 border-t border-r border-gray-200 transform rotate-45 -translate-y-1/2"></div>
-                  <div class="md:hidden absolute top-8 -left-3.5 w-7 h-7 bg-gray-50 border-b border-l border-gray-200 transform rotate-45 -translate-y-1/2"></div>
-                  
-                  <h3 class="text-2xl font-bold text-gray-800 mb-1">Pertama Bertemu</h3>
-                  <span class="text-base text-pink mb-4 block font-semibold">1 Juni 2000</span>
+            <div
+              class="relative flex flex-col md:flex-row items-center justify-between w-full group"
+            >
+              <div
+                class="absolute left-[40px] md:left-1/2 top-0 md:top-1/2 w-20 h-20 md:w-40 md:h-40 bg-gray-300 rounded-full border-4 border-white shadow-lg bg-cover bg-center -translate-x-1/2 md:-translate-y-1/2 z-10 transition-transform duration-300 group-hover:scale-110"
+                style="background-image: url(img/sman23.jpg)"
+              ></div>
+              <div
+                class="w-full pl-[100px] md:pl-0 md:w-[45%] md:pr-16 md:text-right self-start md:self-center mt-2 md:mt-0"
+              >
+                <div
+                  class="bg-gray-50 border border-gray-200 p-6 md:p-8 rounded-xl shadow-md relative hover:shadow-lg transition"
+                >
+                  <div
+                    class="hidden md:block absolute top-1/2 -right-3.5 w-7 h-7 bg-gray-50 border-t border-r border-gray-200 transform rotate-45 -translate-y-1/2"
+                  ></div>
+                  <div
+                    class="md:hidden absolute top-8 -left-3.5 w-7 h-7 bg-gray-50 border-b border-l border-gray-200 transform rotate-45 -translate-y-1/2"
+                  ></div>
+                  <h3 class="text-2xl font-bold text-gray-800 mb-1">
+                    Pertama Bertemu
+                  </h3>
+                  <span class="text-base text-pink mb-4 block font-semibold"
+                    >1 Juni 2000</span
+                  >
                   <p class="text-gray-600 font-light text-base md:text-lg">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quos, modi autem? Commodi autem quo quia?
@@ -287,15 +437,28 @@
             </div>
 
             <!-- Event 2 (Right Desktop) -->
-            <div class="relative flex flex-col md:flex-row-reverse items-center justify-between w-full group">
-              <div class="absolute left-[40px] md:left-1/2 top-0 md:top-1/2 w-20 h-20 md:w-40 md:h-40 bg-gray-300 rounded-full border-4 border-white shadow-lg bg-cover bg-center -translate-x-1/2 md:-translate-y-1/2 z-10 transition-transform duration-300 group-hover:scale-110" style="background-image: url(https://picsum.photos/300/300)"></div>
-              
-              <div class="w-full pl-[100px] md:pl-0 md:w-[45%] md:pl-16 text-left self-start md:self-center mt-2 md:mt-0">
-                <div class="bg-gray-50 border border-gray-200 p-6 md:p-8 rounded-xl shadow-md relative hover:shadow-lg transition">
-                  <div class="absolute top-8 md:top-1/2 -left-3.5 w-7 h-7 bg-gray-50 border-b border-l border-gray-200 transform rotate-45 -translate-y-1/2"></div>
-                  
-                  <h3 class="text-2xl font-bold text-gray-800 mb-1">Mulai Serius</h3>
-                  <span class="text-base text-pink mb-4 block font-semibold">1 Januari 2005</span>
+            <div
+              class="relative flex flex-col md:flex-row-reverse items-center justify-between w-full group"
+            >
+              <div
+                class="absolute left-[40px] md:left-1/2 top-0 md:top-1/2 w-20 h-20 md:w-40 md:h-40 bg-gray-300 rounded-full border-4 border-white shadow-lg bg-cover bg-center -translate-x-1/2 md:-translate-y-1/2 z-10 transition-transform duration-300 group-hover:scale-110"
+                style="background-image: url(https://picsum.photos/300/300)"
+              ></div>
+              <div
+                class="w-full pl-[100px] md:pl-0 md:w-[45%] md:pl-16 text-left self-start md:self-center mt-2 md:mt-0"
+              >
+                <div
+                  class="bg-gray-50 border border-gray-200 p-6 md:p-8 rounded-xl shadow-md relative hover:shadow-lg transition"
+                >
+                  <div
+                    class="absolute top-8 md:top-1/2 -left-3.5 w-7 h-7 bg-gray-50 border-b border-l border-gray-200 transform rotate-45 -translate-y-1/2"
+                  ></div>
+                  <h3 class="text-2xl font-bold text-gray-800 mb-1">
+                    Mulai Serius
+                  </h3>
+                  <span class="text-base text-pink mb-4 block font-semibold"
+                    >1 Januari 2005</span
+                  >
                   <p class="text-gray-600 font-light text-base md:text-lg">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Architecto enim eaque obcaecati odit itaque explicabo
@@ -306,16 +469,31 @@
             </div>
 
             <!-- Event 3 (Left Desktop) -->
-            <div class="relative flex flex-col md:flex-row items-center justify-between w-full group">
-              <div class="absolute left-[40px] md:left-1/2 top-0 md:top-1/2 w-20 h-20 md:w-40 md:h-40 bg-gray-300 rounded-full border-4 border-white shadow-lg bg-cover bg-center -translate-x-1/2 md:-translate-y-1/2 z-10 transition-transform duration-300 group-hover:scale-110" style="background-image: url(https://picsum.photos/301/301)"></div>
-              
-              <div class="w-full pl-[100px] md:pl-0 md:w-[45%] md:pr-16 md:text-right self-start md:self-center mt-2 md:mt-0">
-                <div class="bg-gray-50 border border-gray-200 p-6 md:p-8 rounded-xl shadow-md relative hover:shadow-lg transition">
-                  <div class="hidden md:block absolute top-1/2 -right-3.5 w-7 h-7 bg-gray-50 border-t border-r border-gray-200 transform rotate-45 -translate-y-1/2"></div>
-                  <div class="md:hidden absolute top-8 -left-3.5 w-7 h-7 bg-gray-50 border-b border-l border-gray-200 transform rotate-45 -translate-y-1/2"></div>
-                  
-                  <h3 class="text-2xl font-bold text-gray-800 mb-1">Tunangan</h3>
-                  <span class="text-base text-pink mb-4 block font-semibold">7 November 2009</span>
+            <div
+              class="relative flex flex-col md:flex-row items-center justify-between w-full group"
+            >
+              <div
+                class="absolute left-[40px] md:left-1/2 top-0 md:top-1/2 w-20 h-20 md:w-40 md:h-40 bg-gray-300 rounded-full border-4 border-white shadow-lg bg-cover bg-center -translate-x-1/2 md:-translate-y-1/2 z-10 transition-transform duration-300 group-hover:scale-110"
+                style="background-image: url(https://picsum.photos/301/301)"
+              ></div>
+              <div
+                class="w-full pl-[100px] md:pl-0 md:w-[45%] md:pr-16 md:text-right self-start md:self-center mt-2 md:mt-0"
+              >
+                <div
+                  class="bg-gray-50 border border-gray-200 p-6 md:p-8 rounded-xl shadow-md relative hover:shadow-lg transition"
+                >
+                  <div
+                    class="hidden md:block absolute top-1/2 -right-3.5 w-7 h-7 bg-gray-50 border-t border-r border-gray-200 transform rotate-45 -translate-y-1/2"
+                  ></div>
+                  <div
+                    class="md:hidden absolute top-8 -left-3.5 w-7 h-7 bg-gray-50 border-b border-l border-gray-200 transform rotate-45 -translate-y-1/2"
+                  ></div>
+                  <h3 class="text-2xl font-bold text-gray-800 mb-1">
+                    Tunangan
+                  </h3>
+                  <span class="text-base text-pink mb-4 block font-semibold"
+                    >7 November 2009</span
+                  >
                   <p class="text-gray-600 font-light text-base md:text-lg">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Eveniet, deleniti distinctio. Esse quas sit explicabo
@@ -324,54 +502,119 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </section>
 
-    <!-- GALLERY SECTION -->
+    <!-- ==================== GALLERY SECTION ==================== -->
     <section id="gallery" class="pt-40 pb-32 bg-gray-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <span class="uppercase text-gray-500 text-sm md:text-base tracking-[0.2em] block mb-3 font-semibold">Memori Kisah Kami</span>
-          <h2 class="text-pink font-sacramento text-6xl md:text-7xl lg:text-8xl font-bold mb-6">Galeri Foto</h2>
-          <p class="text-gray-600 text-lg md:text-xl font-light max-w-2xl mx-auto">
+          <span
+            class="uppercase text-gray-500 text-sm md:text-base tracking-[0.2em] block mb-3 font-semibold"
+          >
+            Memori Kisah Kami
+          </span>
+          <h2
+            class="text-pink font-sacramento text-6xl md:text-7xl lg:text-8xl font-bold mb-6"
+          >
+            Galeri Foto
+          </h2>
+          <p
+            class="text-gray-600 text-lg md:text-xl font-light max-w-2xl mx-auto"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
             itaque?
           </p>
         </div>
 
         <!-- Images Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <a href="img/gallery/1.png" class="gallery-link block rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-300" data-caption="Sandhika & Nofa 1">
-            <img src="img/gallery/thumbnail/1.png" alt="Sandhika & Nofa 1" class="w-full h-full aspect-square object-cover hover:scale-110 transition duration-500" />
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          <a
+            href="img/gallery/1.png"
+            class="gallery-link block rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-300"
+            data-caption="Sandhika & Nofa 1"
+          >
+            <img
+              src="img/gallery/thumbnail/1.png"
+              alt="Sandhika & Nofa 1"
+              class="w-full h-full aspect-square object-cover hover:scale-110 transition duration-500"
+            />
           </a>
-          <a href="https://picsum.photos/id/300/1200/768" class="gallery-link block rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-300" data-caption="Sandhika & Nofa 2">
-            <img src="https://picsum.photos/id/300/300/400" alt="Sandhika & Nofa 2" class="w-full h-full aspect-square object-cover hover:scale-110 transition duration-500" />
+          <a
+            href="https://picsum.photos/id/300/1200/768"
+            class="gallery-link block rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-300"
+            data-caption="Sandhika & Nofa 2"
+          >
+            <img
+              src="https://picsum.photos/id/300/300/400"
+              alt="Sandhika & Nofa 2"
+              class="w-full h-full aspect-square object-cover hover:scale-110 transition duration-500"
+            />
           </a>
-          <a href="https://picsum.photos/id/301/1200/768" class="gallery-link block rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-300" data-caption="Sandhika & Nofa 3">
-            <img src="https://picsum.photos/id/301/300/400" alt="Sandhika & Nofa 3" class="w-full h-full aspect-square object-cover hover:scale-110 transition duration-500" />
+          <a
+            href="https://picsum.photos/id/301/1200/768"
+            class="gallery-link block rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-300"
+            data-caption="Sandhika & Nofa 3"
+          >
+            <img
+              src="https://picsum.photos/id/301/300/400"
+              alt="Sandhika & Nofa 3"
+              class="w-full h-full aspect-square object-cover hover:scale-110 transition duration-500"
+            />
           </a>
-          <a href="https://picsum.photos/id/302/1200/768" class="gallery-link block rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-300" data-caption="Sandhika & Nofa 4">
-            <img src="https://picsum.photos/id/302/300/400" alt="Sandhika & Nofa 4" class="w-full h-full aspect-square object-cover hover:scale-110 transition duration-500" />
+          <a
+            href="https://picsum.photos/id/302/1200/768"
+            class="gallery-link block rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-300"
+            data-caption="Sandhika & Nofa 4"
+          >
+            <img
+              src="https://picsum.photos/id/302/300/400"
+              alt="Sandhika & Nofa 4"
+              class="w-full h-full aspect-square object-cover hover:scale-110 transition duration-500"
+            />
           </a>
-          <a href="https://picsum.photos/id/304/1200/768" class="gallery-link block rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-300" data-caption="Sandhika & Nofa 5">
-            <img src="https://picsum.photos/id/304/300/400" alt="Sandhika & Nofa 5" class="w-full h-full aspect-square object-cover hover:scale-110 transition duration-500" />
+          <a
+            href="https://picsum.photos/id/304/1200/768"
+            class="gallery-link block rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-300"
+            data-caption="Sandhika & Nofa 5"
+          >
+            <img
+              src="https://picsum.photos/id/304/300/400"
+              alt="Sandhika & Nofa 5"
+              class="w-full h-full aspect-square object-cover hover:scale-110 transition duration-500"
+            />
           </a>
-          <a href="https://picsum.photos/id/305/1200/768" class="gallery-link block rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-300" data-caption="Sandhika & Nofa 6">
-            <img src="https://picsum.photos/id/305/300/400" alt="Sandhika & Nofa 6" class="w-full h-full aspect-square object-cover hover:scale-110 transition duration-500" />
+          <a
+            href="https://picsum.photos/id/305/1200/768"
+            class="gallery-link block rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-300"
+            data-caption="Sandhika & Nofa 6"
+          >
+            <img
+              src="https://picsum.photos/id/305/300/400"
+              alt="Sandhika & Nofa 6"
+              class="w-full h-full aspect-square object-cover hover:scale-110 transition duration-500"
+            />
           </a>
         </div>
       </div>
     </section>
 
-    <!-- RSVP SECTION -->
+    <!-- ==================== RSVP SECTION ==================== -->
     <section id="rsvp" class="pt-40 pb-32 bg-bg">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-pink font-sacramento text-6xl md:text-7xl lg:text-8xl font-bold mb-6">Konfirmasi Kehadiran</h2>
-          <p class="text-white text-lg md:text-xl font-light">Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+          <h2
+            class="text-pink font-sacramento text-6xl md:text-7xl lg:text-8xl font-bold mb-6"
+          >
+            Konfirmasi Kehadiran
+          </h2>
+          <p class="text-white text-lg md:text-xl font-light">
+            Isi form di bawah ini untuk melakukan konfirmasi kehadiran.
+          </p>
         </div>
 
         <form
@@ -380,11 +623,13 @@
           id="my-form"
           class="flex flex-col md:flex-row items-end justify-center gap-6 max-w-4xl mx-auto"
         >
-          <!-- hidden input untuk menyimpan id tamu -->
+          <!-- Hidden input untuk menyimpan id tamu -->
           <input type="hidden" id="tamu_id" name="tamu_id" />
 
           <div class="w-full md:w-1/4">
-            <label for="nama" class="block text-white mb-2 text-base md:text-lg">Nama</label>
+            <label for="nama" class="block text-white mb-2 text-base md:text-lg"
+              >Nama</label
+            >
             <input
               type="text"
               id="nama"
@@ -393,9 +638,13 @@
               class="w-full px-4 py-3 rounded bg-white text-gray-800 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-pink"
             />
           </div>
-          
+
           <div class="w-full md:w-1/4">
-            <label for="jumlah" class="block text-white mb-2 text-base md:text-lg">Jumlah</label>
+            <label
+              for="jumlah"
+              class="block text-white mb-2 text-base md:text-lg"
+              >Jumlah</label
+            >
             <input
               type="number"
               id="jumlah"
@@ -406,45 +655,74 @@
               class="w-full px-4 py-3 rounded bg-white text-gray-800 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-pink"
             />
           </div>
-          
+
           <div class="w-full md:w-1/4">
-            <label for="status" class="block text-white mb-2 text-base md:text-lg">Konfirmasi</label>
-            <select name="status" id="status" class="w-full px-4 py-3 rounded bg-white text-gray-800 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-pink">
+            <label
+              for="status"
+              class="block text-white mb-2 text-base md:text-lg"
+              >Konfirmasi</label
+            >
+            <select
+              name="status"
+              id="status"
+              class="w-full px-4 py-3 rounded bg-white text-gray-800 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-pink"
+            >
               <option selected>Pilih salah satu</option>
               <option value="Hadir">Hadir</option>
               <option value="Tidak Hadir">Tidak Hadir</option>
             </select>
           </div>
-          
+
           <div class="w-full md:w-auto mt-4 md:mt-0">
-            <button type="submit" class="w-full md:w-auto px-8 py-3 bg-pink text-white border border-pink rounded hover:bg-white hover:text-pink transition font-semibold text-lg">Kirim</button>
+            <button
+              type="submit"
+              class="w-full md:w-auto px-8 py-3 bg-pink text-white border border-pink rounded hover:bg-white hover:text-pink transition font-semibold text-lg"
+            >
+              Kirim
+            </button>
           </div>
         </form>
       </div>
     </section>
 
-    <!-- GIFTS SECTION -->
+    <!-- ==================== GIFTS SECTION ==================== -->
     <section id="gifts" class="pt-40 pb-32 bg-white">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <span class="uppercase text-gray-500 text-sm md:text-base tracking-[0.2em] block mb-3 font-semibold">ungkapan tanda kasih</span>
-          <h2 class="text-pink font-sacramento text-6xl md:text-7xl lg:text-8xl font-bold mb-6">Kirim Hadiah</h2>
-          <p class="text-gray-600 text-lg md:text-xl font-light max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-            iure perferendis provident ab aliquam nemo.
+          <span
+            class="uppercase text-gray-500 text-sm md:text-base tracking-[0.2em] block mb-3 font-semibold"
+          >
+            Ungkapan tanda kasih
+          </span>
+          <h2
+            class="text-pink font-sacramento text-6xl md:text-7xl lg:text-8xl font-bold mb-6"
+          >
+            Kirim Hadiah
+          </h2>
+          <p
+            class="text-gray-600 text-lg md:text-xl font-light max-w-2xl mx-auto"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iure
+            perferendis provident ab aliquam nemo.
           </p>
         </div>
 
         <div class="flex justify-center">
           <div class="w-full max-w-lg">
-            <ul class="flex flex-col border border-gray-300 rounded-xl overflow-hidden text-center shadow-lg">
+            <ul
+              class="flex flex-col border border-gray-300 rounded-xl overflow-hidden text-center shadow-lg"
+            >
               <li class="px-6 py-5 border-b border-gray-300 bg-white">
                 <div class="font-bold text-gray-800 mb-2 text-xl">BCA</div>
-                <span class="text-gray-600 text-lg">123456789 - SANDHIKA GALIH</span>
+                <span class="text-gray-600 text-lg"
+                  >123456789 - SANDHIKA GALIH</span
+                >
               </li>
               <li class="px-6 py-5 border-b border-gray-300 bg-white">
                 <div class="font-bold text-gray-800 mb-2 text-xl">MANDIRI</div>
-                <span class="text-gray-600 text-lg">987654321 - SANDHIKA GALIH</span>
+                <span class="text-gray-600 text-lg"
+                  >987654321 - SANDHIKA GALIH</span
+                >
               </li>
               <li class="px-6 py-6 bg-white flex flex-col items-center">
                 <div class="font-bold text-gray-800 mb-4 text-xl">Saweria</div>
@@ -460,128 +738,167 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ==================== FOOTER ==================== -->
     <footer class="bg-pink text-white py-16">
       <div class="max-w-5xl mx-auto px-4 text-center">
-        <small class="block mb-2 text-lg md:text-xl">&copy; 2023 DiNo Wedding. All Rights Reserved.</small>
-        <small class="block mb-8 text-base md:text-lg"
-          >Design by
-          <a href="https://instagram.com/sandhikagalih" class="font-bold text-bg hover:text-white transition">@sandhikagalih</a>.</small
+        <small class="block mb-2 text-lg md:text-xl"
+          >&copy; 2023 DiNo Wedding. All Rights Reserved.</small
         >
+        <small class="block mb-8 text-base md:text-lg">
+          Design by
+          <a
+            href="https://instagram.com/sandhikagalih"
+            class="font-bold text-bg hover:text-white transition"
+            >@sandhikagalih</a
+          >.
+        </small>
 
         <ul class="flex justify-center gap-6 mt-4">
           <li>
-            <a href="#" class="text-white hover:text-bg transition"><i class="bi bi-instagram text-2xl"></i></a>
+            <a href="#" class="text-white hover:text-bg transition"
+              ><i class="bi bi-instagram text-2xl"></i
+            ></a>
           </li>
           <li>
-            <a href="#" class="text-white hover:text-bg transition"><i class="bi bi-youtube text-2xl"></i></a>
+            <a href="#" class="text-white hover:text-bg transition"
+              ><i class="bi bi-youtube text-2xl"></i
+            ></a>
           </li>
           <li>
-            <a href="#" class="text-white hover:text-bg transition"><i class="bi bi-twitter text-2xl"></i></a>
+            <a href="#" class="text-white hover:text-bg transition"
+              ><i class="bi bi-twitter text-2xl"></i
+            ></a>
           </li>
           <li>
-            <a href="#" class="text-white hover:text-bg transition"><i class="bi bi-facebook text-2xl"></i></a>
+            <a href="#" class="text-white hover:text-bg transition"
+              ><i class="bi bi-facebook text-2xl"></i
+            ></a>
           </li>
           <li>
-            <a href="#" class="text-white hover:text-bg transition"><i class="bi bi-tiktok text-2xl"></i></a>
+            <a href="#" class="text-white hover:text-bg transition"
+              ><i class="bi bi-tiktok text-2xl"></i
+            ></a>
           </li>
         </ul>
       </div>
     </footer>
 
-    <!-- AUDIO -->
+    <!-- ==================== AUDIO ==================== -->
     <div id="audio-container">
       <audio id="song" autoplay loop>
         <source src="audio/save-and-sound.mp3" type="audio/mp3" />
       </audio>
 
-      <div class="audio-icon-wrapper fixed bottom-10 right-8 w-16 h-16 text-[4rem] text-white opacity-50 cursor-pointer mix-blend-difference flex justify-center items-center animate-[spin_4s_linear_infinite] origin-center z-50 transition" style="display: none;">
+      <div
+        class="audio-icon-wrapper fixed bottom-10 right-8 w-16 h-16 text-[4rem] text-white opacity-50 cursor-pointer mix-blend-difference flex justify-center items-center animate-[spin_4s_linear_infinite] origin-center z-50 transition"
+        style="display: none"
+      >
         <i class="bi bi-disc"></i>
       </div>
     </div>
 
-    <!-- LIGHTBOX MODAL -->
-    <div id="lightbox" class="fixed inset-0 z-[100] bg-black/90 hidden flex-col justify-center items-center opacity-0 transition-opacity duration-300 backdrop-blur-sm">
-      <button id="lightbox-close" class="absolute top-6 right-8 text-white text-5xl hover:text-pink transition focus:outline-none z-50">&times;</button>
+    <!-- ==================== LIGHTBOX MODAL ==================== -->
+    <div
+      id="lightbox"
+      class="fixed inset-0 z-[100] bg-black/90 hidden flex-col justify-center items-center opacity-0 transition-opacity duration-300 backdrop-blur-sm"
+    >
+      <button
+        id="lightbox-close"
+        class="absolute top-6 right-8 text-white text-5xl hover:text-pink transition focus:outline-none z-50"
+      >
+        &times;
+      </button>
       <div class="relative w-full max-w-5xl px-4 flex flex-col items-center">
-        <img id="lightbox-img" src="" alt="Lightbox Image" class="max-h-[85vh] max-w-full object-contain rounded shadow-2xl" />
-        <p id="lightbox-caption" class="text-white text-center mt-6 text-xl font-light tracking-wide"></p>
+        <img
+          id="lightbox-img"
+          src=""
+          alt="Lightbox Image"
+          class="max-h-[85vh] max-w-full object-contain rounded shadow-2xl"
+        />
+        <p
+          id="lightbox-caption"
+          class="text-white text-center mt-6 text-xl font-light tracking-wide"
+        ></p>
       </div>
     </div>
 
-    <!-- VANILLA JS REPLACEMENTS FOR BOOTSTRAP -->
+    <!-- ==================== JAVASCRIPT ==================== -->
+
+    <!-- Mobile Navigation & Lightbox -->
     <script>
       // Mobile Navigation
-      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
+      const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
 
       const toggleMobileMenu = () => {
-          mobileMenu.classList.toggle('hidden');
-          mobileMenuOverlay.classList.toggle('hidden');
-          document.body.classList.toggle('overflow-hidden');
+        mobileMenu.classList.toggle("hidden");
+        mobileMenuOverlay.classList.toggle("hidden");
+        document.body.classList.toggle("overflow-hidden");
       };
 
-      mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+      mobileMenuBtn.addEventListener("click", toggleMobileMenu);
 
-      mobileNavLinks.forEach(link => {
-          link.addEventListener('click', () => {
-              mobileMenu.classList.add('hidden');
-              mobileMenuOverlay.classList.add('hidden');
-              document.body.classList.remove('overflow-hidden');
-          });
+      mobileNavLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          mobileMenuOverlay.classList.add("hidden");
+          document.body.classList.remove("overflow-hidden");
+        });
       });
 
-      mobileMenuOverlay.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-          mobileMenuOverlay.classList.add('hidden');
-          document.body.classList.remove('overflow-hidden');
+      mobileMenuOverlay.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        mobileMenuOverlay.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
       });
 
-      // Lightbox functionality
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      const lightboxCaption = document.getElementById('lightbox-caption');
-      const lightboxClose = document.getElementById('lightbox-close');
-      const galleryLinks = document.querySelectorAll('.gallery-link');
+      // Lightbox
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxCaption = document.getElementById("lightbox-caption");
+      const lightboxClose = document.getElementById("lightbox-close");
+      const galleryLinks = document.querySelectorAll(".gallery-link");
 
-      galleryLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
+      galleryLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
           e.preventDefault();
-          lightboxImg.src = link.getAttribute('href');
-          lightboxCaption.textContent = link.getAttribute('data-caption');
-          lightbox.classList.remove('hidden');
-          lightbox.classList.add('flex');
-          // slight delay for transition
+          lightboxImg.src = link.getAttribute("href");
+          lightboxCaption.textContent = link.getAttribute("data-caption");
+          lightbox.classList.remove("hidden");
+          lightbox.classList.add("flex");
+          // Slight delay for transition
           setTimeout(() => {
-            lightbox.classList.remove('opacity-0');
-            lightbox.classList.add('opacity-100');
+            lightbox.classList.remove("opacity-0");
+            lightbox.classList.add("opacity-100");
           }, 10);
         });
       });
 
       const closeLightbox = () => {
-        lightbox.classList.remove('opacity-100');
-        lightbox.classList.add('opacity-0');
+        lightbox.classList.remove("opacity-100");
+        lightbox.classList.add("opacity-0");
         setTimeout(() => {
-          lightbox.classList.add('hidden');
-          lightbox.classList.remove('flex');
+          lightbox.classList.add("hidden");
+          lightbox.classList.remove("flex");
         }, 300);
       };
 
-      lightboxClose.addEventListener('click', closeLightbox);
-      lightbox.addEventListener('click', (e) => {
+      lightboxClose.addEventListener("click", closeLightbox);
+
+      lightbox.addEventListener("click", (e) => {
         if (e.target === lightbox) closeLightbox();
       });
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !lightbox.classList.contains("hidden")) {
           closeLightbox();
         }
       });
     </script>
 
-    <!-- ORIGINAL JAVASCRIPT LOGIC -->
+    <!-- Countdown -->
     <script>
       simplyCountdown(".simply-countdown", {
         year: 2026, // required
@@ -589,7 +906,7 @@
         day: 20, // required
         hours: 8, // Default is 0 [0-23] integer
         words: {
-          //words displayed into the countdown
+          // Words displayed into the countdown
           days: { singular: "hari", plural: "hari" },
           hours: { singular: "jam", plural: "jam" },
           minutes: { singular: "menit", plural: "menit" },
@@ -598,6 +915,7 @@
       });
     </script>
 
+    <!-- Audio & Scroll Control -->
     <script>
       const rootElement = document.querySelector(":root");
       const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
@@ -634,7 +952,9 @@
           song.pause();
           audioIcon.classList.remove("bi-disc");
           audioIcon.classList.add("bi-pause-circle");
-          audioIconWrapper.classList.remove("animate-[spin_4s_linear_infinite]");
+          audioIconWrapper.classList.remove(
+            "animate-[spin_4s_linear_infinite]",
+          );
         } else {
           song.play();
           audioIcon.classList.add("bi-disc");
@@ -647,43 +967,45 @@
 
       disableScroll();
     </script>
+
+    <!-- RSVP Form Submit -->
     <script>
       window.addEventListener("DOMContentLoaded", function () {
-      const form = document.getElementById("my-form");
-      const submitButton = form.querySelector('button[type="submit"]');
+        const form = document.getElementById("my-form");
+        const submitButton = form.querySelector('button[type="submit"]');
 
-      form.addEventListener("submit", async function (e) {
-        e.preventDefault();
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
 
-        submitButton.disabled = true;
-        submitButton.textContent = "Mengirim...";
+          submitButton.disabled = true;
+          submitButton.textContent = "Mengirim...";
 
-        const data = new FormData(form);
+          const data = new FormData(form);
 
-        try {
-          await fetch(form.action, {
-            method: "POST",
-            body: data,
-            mode: "no-cors",
-          });
+          try {
+            await fetch(form.action, {
+              method: "POST",
+              body: data,
+              mode: "no-cors",
+            });
 
-          alert("Konfirmasi kehadiran berhasil dikirim!");
+            alert("Konfirmasi kehadiran berhasil dikirim!");
 
-          // Reset hanya field yang perlu direset
-          document.getElementById("jumlah").value = "1";
-          document.getElementById("status").value = "";
-
-        } catch (error) {
-          console.error("Gagal mengirim RSVP:", error);
-          alert("Gagal mengirim konfirmasi. Silakan coba lagi.");
-        } finally {
-          submitButton.disabled = false;
-          submitButton.textContent = "Kirim";
-        }
+            // Reset hanya field yang perlu direset
+            document.getElementById("jumlah").value = "1";
+            document.getElementById("status").value = "";
+          } catch (error) {
+            console.error("Gagal mengirim RSVP:", error);
+            alert("Gagal mengirim konfirmasi. Silakan coba lagi.");
+          } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = "Kirim";
+          }
+        });
       });
-    });
     </script>
 
+    <!-- Load Guest Data -->
     <script>
       const API_URL =
         "https://script.google.com/macros/s/AKfycbwyGEzYnTN8bQldzfpmigibYbpwSw6zKN0lZerTsYz4sBjMdKSRNXKKPlL94hUoHoQs/exec";
@@ -705,7 +1027,6 @@
           const response = await fetch(
             `${API_URL}?to=${encodeURIComponent(tamuId)}`,
           );
-
           const result = await response.json();
 
           if (!result.success) {
@@ -722,7 +1043,6 @@
           tamuIdInput.value = tamuId;
         } catch (error) {
           console.error("Gagal mengambil data tamu:", error);
-
           namaContainer.innerText = "Bapak/Ibu/Saudara/i,";
         }
       }
